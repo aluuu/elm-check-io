@@ -8,7 +8,7 @@
 
 Create `elm-check` test suite as you did it before:
 
-```
+```elm
 import Check exposing (..)
 import Check.Investigator exposing ( Investigator
                                    , investigator
@@ -35,7 +35,7 @@ result = quickCheck dummySuite
 
 Then add IO-related imports and custom running part:
 
-```
+```elm
 import Check.Runner.IO exposing (display)
 import IO.IO exposing (..)
 import IO.Runner exposing (Request, Response)
@@ -52,20 +52,20 @@ port requests = IO.run responses run
 
 Fetch proper `elm-io.sh` script:
 
-```
+```shell
 curl https://raw.githubusercontent.com/maxsnew/IO/1.0.1/elm-io.sh > elm-io.sh
 ```
 
 
 Finally, we run it with the following commands:
 
-```
+```shell
 elm-make --output test.js example/Test.elm
 ./elm-io.sh test.js test-io.js
 node test-io.js
 ```
 
-I'll get 0 exit code in case test run was successful and 1 otherwise. Additionally, test results would be showed in text form.
+You'll get 0 exit code in case test run was successful and 1 otherwise. Additionally, test results would be showed in text form.
 
 ## Contributing
 
