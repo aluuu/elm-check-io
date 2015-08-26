@@ -48,6 +48,13 @@ port requests : Signal Request
 port requests = IO.run responses run
 ```
 
+Fetch proper `elm-io.sh` script:
+
+```
+curl https://raw.githubusercontent.com/maxsnew/IO/1.0.1/elm-io.sh > elm-io.sh
+```
+
+
 Finally, we run it with the following commands:
 
 ```
