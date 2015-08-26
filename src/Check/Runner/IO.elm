@@ -1,4 +1,4 @@
-module Check.Runner.IO where
+module Check.Runner.IO (display) where
 {-| IO test runner for elm-check. This module provides functions to
 run and visualize tests in the terminal.
 
