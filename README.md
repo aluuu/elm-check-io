@@ -1,5 +1,7 @@
 # elm-check-io
 
+[![Build Status](https://travis-ci.org/aluuu/elm-check-io.svg)](https://travis-ci.org/aluuu/elm-check-io)
+
 [Elm-check](http://package.elm-lang.org/packages/TheSeamau5/elm-check/3.2.0) test runner with command-line interface using [IO](http://package.elm-lang.org/packages/maxsnew/IO/1.0.1).
 
 ## Getting started
